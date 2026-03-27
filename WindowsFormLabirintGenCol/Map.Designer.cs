@@ -58,6 +58,7 @@
             this.buttonNewGame.TabIndex = 1;
             this.buttonNewGame.Text = "Новая игра";
             this.buttonNewGame.UseVisualStyleBackColor = true;
+            this.buttonNewGame.Click += new System.EventHandler(this.buttonNewGame_Click);
             // 
             // labelScore
             // 
@@ -80,9 +81,9 @@
             // listBoxMessages
             // 
             this.listBoxMessages.FormattingEnabled = true;
-            this.listBoxMessages.Location = new System.Drawing.Point(681, 34);
+            this.listBoxMessages.Location = new System.Drawing.Point(663, 34);
             this.listBoxMessages.Name = "listBoxMessages";
-            this.listBoxMessages.Size = new System.Drawing.Size(120, 160);
+            this.listBoxMessages.Size = new System.Drawing.Size(137, 238);
             this.listBoxMessages.TabIndex = 4;
             // 
             // Map
@@ -99,6 +100,7 @@
             this.Name = "Map";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Map_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Map_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLabirint)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
